@@ -13,17 +13,18 @@ import { UniqueId } from 'src/shared/validations/uniqueId';
 import { FlexibleName } from 'src/shared/validations/valueObject/flexibleName';
 import { Email } from 'src/shared/validations/valueObject/email';
 import { Phone } from 'src/shared/validations/valueObject/phone';
-/* Services */
-import { ApartmentsService } from './apartments.service';
-import { OwnersService } from './infrastructure/owner/owners.service';
-/* Dtos */
-import { CreateApartmentDto } from './dto/create-apartment.dto';
 import { CountryCode } from 'src/shared/validations/valueObject/countryCode';
 import { PositiveNumber } from 'src/shared/validations/valueObject/positiveNumber';
 import { City } from 'src/shared/validations/valueObject/city';
 import { Price } from 'src/shared/validations/valueObject/price';
 import { PlainAddress } from 'src/shared/validations/valueObject/plainAddress';
+/* Services */
+import { ApartmentsService } from './apartments.service';
+import { OwnersService } from './infrastructure/owner/owners.service';
+/* Dtos */
+import { CreateApartmentDto } from './dto/create-apartment.dto';
 import { CreateApartmentsDto } from './dto/create-apartments.dto';
+/* Entities */
 import { Apartment } from './entities/apartment.entity';
 
 @ApiTags('Apartments')
