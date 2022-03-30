@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 export default () => ({
+  port: process.env.PORT,
   isDev: process.env.MODE === 'DEV',
   database: {
     habiDataBase: {

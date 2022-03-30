@@ -1,5 +1,5 @@
 import { Owner } from 'src/owners/entities/owner.entity';
-import { Entity, Column, CreateDateColumn, OneToMany, ManyToOne } from 'typeorm';
+import { Entity, Column, CreateDateColumn, ManyToOne } from 'typeorm';
 
 @Entity()
 export class Apartment {

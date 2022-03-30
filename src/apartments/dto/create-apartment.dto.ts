@@ -1,4 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
+import { CreateOwnerDto } from "../infrastructure/owner/create-owner.dto";
 
 export class CreateApartmentDto {
   @ApiProperty({ uniqueItems: true, description: 'Uuid v4' })
@@ -16,5 +17,6 @@ export class CreateApartmentDto {
   @ApiProperty()
   city: string;
   @ApiProperty()
+  owner?: CreateOwnerDto;
   id_owner: string;
 }
