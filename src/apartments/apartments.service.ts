@@ -30,7 +30,7 @@ export class ApartmentsService {
       location: apartmentDomain.location.toString(),
       number_rooms: apartmentDomain.number_rooms.value,
       price: apartmentDomain.price.value,
-      id_owner: apartmentDomain.id_owner.toString()
+      owner: apartmentDomain.id_owner.toString()
     });
 
     return apartmentCreated;

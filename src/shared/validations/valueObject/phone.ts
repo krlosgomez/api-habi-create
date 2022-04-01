@@ -12,7 +12,6 @@ export class Phone {
     }
 
     private ensureIsValid(value: string, countryCode = new CountryCode('CO')): void {
-        console.log('ensure: ')
         const phoneNumberUtil = PhoneNumberUtil.getInstance();
         const isValidPhone = phoneNumberUtil.isValidNumberForRegion(phoneNumberUtil.parse(value, countryCode.toString()), countryCode.toString());
         if (!value || !isValidPhone) {
